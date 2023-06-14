@@ -1,0 +1,156 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size:16px;
+    text-decoration: none;
+    list-style: none;
+}
+h3{
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: underline solid #393E46 3px;
+    font-size: 24px;
+}
+.outer-wrap{
+    width:100%;
+    min-height: 100vh;
+    background-color: #dee9fa;
+    padding:30px;
+}
+.inner-wrap{
+    max-width: 1200px;
+    margin:auto;
+}
+.heading{
+    margin:30px auto ;
+    padding:0px 20px;
+
+
+}
+.heading .title{
+   font-size: 30px;
+   font-weight: 500px;
+   text-align: center;
+   color:#000000;
+}
+.heading .subtitle{
+    font-size: 20px;
+    font-weight: 300px;
+    text-align: center;
+    color:#000000;
+
+}
+.transaction-control{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:10px;
+    margin:30px auto;
+}
+.actions,.stats{
+    flex-grow: 1;
+    background-color: #ffffff;
+    padding:20px ;
+    border-radius: 5px;
+    margin:0px 10px;
+
+}
+.actions .add{
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+}
+.actions .add input{
+    font-size: 18px;
+    padding:5px;
+    margin:10px;
+}
+.actions .add input[type="submit"]{
+    padding:7px 15px;
+    border-radius: 5px;
+    border:0px;
+    background-color: #2666CF;
+    color:#ffffff;
+    cursor: pointer;
+}
+.stats p{
+margin:20px 10px;
+padding:10px 20px;
+font-size: 18px;
+border-radius: 2px;
+text-align: center;
+}
+.stats p.balance{
+background-color: #fff2dd92;
+border-right: 10px solid #f6c065;
+}
+.stats p.income{
+ background-color:#e7fff1ad; 
+border-right:10px solid #16c77a;
+
+}
+.stats p.expence{
+background-color: #ffeef0bb;
+border-right: 10px solid #eb596e;
+
+}
+.stats p span{
+    font-size: 20px;
+}
+.transaction-history{
+    margin:40px 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding:30px 0px;
+}
+.records{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:20px;
+    margin:20px;
+}
+.records div{
+    flex-grow: 1;
+    padding:10px;
+}
+.records li{
+    display:flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding:10px;
+    margin:12px 0px;
+    min-width:250px;
+}
+.records .income li{
+    border-left: 10px solid #2ecc71;
+
+}
+.records .expence li{
+    border-left: 10px solid #DF5E5E;
+
+}
+.records li p:first-child{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.records span{
+    font-size: 20px;;
+}
+.records span#time{
+    color:#717171;
+    font-size:15px;
+}
+.records i.delete{
+    margin-left:25px;
+    color:#000000;
+    cursor: pointer;
+    font-size: 20px;
+}
+.records i.delete:hover{
+    color:red;
+}
